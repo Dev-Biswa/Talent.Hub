@@ -1,0 +1,65 @@
+<div class="form-header">
+  <div class="container">
+    <h2 class="page-title">Registration</h2>
+  </div>
+</div>
+
+<form novalidate [formGroup]="formGroup" formEvent>
+  <div class="container form-box my-4">
+    <div class="row my-3">
+      <div class="col-sm-8 offset-sm-2">
+        <div class="row form-group">
+          <label class="col-sm-12">Account Type</label>
+          <select class="col-sm-12 form-control" formControlName="type">
+            <option selected>Choose Account Type</option>
+            <option *ngFor="let a of accountTypes" [ngValue]="a.Id">{{a.Value}}</option>
+          </select>
+        </div>
+        <div class="row form-group">
+          <label class="col-sm-12">User Name</label>
+          <input class="col-sm-12 form-control" type="text" [formControl]="userName">
+        </div>
+        <div class="row form-group">
+          <label class="col-sm-12">First Name</label>
+          <input class="col-sm-12 form-control" type="text" [formControl]="firstName">
+        </div>
+        <div class="row form-group">
+          <label class="col-sm-12">Last Name</label>
+          <input class="col-sm-12 form-control" type="text" [formControl]="lastName">
+        </div>
+        <div class="row form-group">
+          <label class="col-sm-12">E-mail Address</label>
+          <input class="col-sm-12 form-control" type="email" [formControl]="email">
+          <div class="form-control-feedback" *ngIf="email.errors && (email.dirty || email.touched)">
+            <p *ngIf="email.errors.required">Email is required</p>
+            <p *ngIf="email.errors.pattern">The email address must contain at least the @ character</p>
+          </div>
+        </div>
+        <div class="row form-group"  [ngClass]="{
+          'has-danger': password.invalid && (password.dirty || password.touched),
+          'has-success': password.valid && (password.dirty || password.touched)
+     }">
+          <label class="col-sm-12">Password</label>
+          <input class="col-sm-12 form-control" type="password" [formControl]="password">
+          <div class="form-control-feedback" *ngIf="password.errors && (password.dirty || password.touched)">
+            <p *ngIf="password.errors.required">Password is required</p>
+            <p *ngIf="password.errors.minlength">Password must be 8 characters long, we need another
+              {{password.errors.minlength.requiredLength - password.errors.minlength.actualLength}} characters </p>
+          </div>
+        </div>
+        <div class="row form-group">
+          <label class="col-sm-12">Confirm Password</label>
+          <input class="col-sm-12 form-control" type="password" [formControl]="confirmPassword">
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
+          </div>
+          <div class="col-sm-6">
+            <a class="btn-light-grey btn btn-secondary btn-lg btn-block" href="/login">Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

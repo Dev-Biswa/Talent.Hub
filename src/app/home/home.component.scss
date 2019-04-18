@@ -1,0 +1,143 @@
+.wrapper {
+  padding-bottom: 50px;
+}
+
+.widget-container {
+  &--heading {
+    color: #6ec1e4;
+    font-family: "Roboto", Sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+  }
+  &--icon {
+    width: 40%;
+    background-color: #6ec1e4;
+    padding: 25px;
+    margin-left: 70px;
+    .fa {
+      color: white;
+      font-size: 32px;
+    }
+  }
+  &--title {
+    color: #6ec1e4;
+    font-family: "Roboto", Sans-serif;
+    font-size: 25px;
+  }
+}
+
+.tabs {
+  &--header {
+    border-top: 4px solid #f90001;
+    display: inline-block;
+    min-height: 30px;
+    padding-top: 17px;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+
+  &-content{
+    &--title{
+      font-style: italic;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    &--description{
+      color: #231f20;
+      font-size: 14px;
+    }
+    &--location{
+      color: #666;
+      font-size: 14px;
+    }
+  }
+
+  .nav {
+    border-bottom: 1px solid grey;
+  }
+
+  .nav-pills .nav-link.active {
+    color: black;
+    background-color: transparent;
+    font-weight: bold;
+    border-bottom: 4px solid #f90001;
+  }
+  .nav-pills .nav-link {
+    color: black;
+    border-radius: 0px;
+  }
+  .nav-pills .nav-link:hover {
+    border-bottom: 4px solid #f90001;
+  }
+  .nav-link {
+    margin: 0px 10px;
+  }
+}
+
+.artist{
+  &--header{
+    @extend .tabs--header;
+  }
+  &--card{
+    width: 20%;
+    margin: 16px 16px;
+  }
+  &--deatil {
+    min-height: 65px;
+    padding: 3px 10px 6px 10px;
+    width: 100%;
+    z-index: 2;
+    background-color: rgba(0,0,0,.7);
+    color: white;
+    text-transform: uppercase;
+  }
+  &--name{
+    font-size: 18px;
+  }
+  &--location{
+    font-size: 10px;
+  }
+
+}
+
+.testimony{
+  &--header{
+    @extend .tabs--header;
+  }
+  .carousel-inner{
+    width: 100%;
+    margin-top: 10px;
+    .carousel-item{
+      -webkit-transition: 1s ease-in-out ;
+      -moz-transition: 1s ease-in-out ;
+      -o-transition: 1s ease-in-out ;
+      transition: 1s ease-in-out ;
+    }
+  }
+  .carousel-indicators li{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+  &--wrap{
+    width: 100%;
+    background-color: #f90001;
+    min-height: 200px;
+    display:block;
+    padding: 5px 15px 55px 15px;
+    img{
+      margin-left: 24%;
+    }
+    p{
+      color: white;
+      font-size: 12px
+    }
+    &-detail{
+      color: white;
+      font-size: 14px;
+    }
+  }
+  &--hr{
+    border-top: 1px solid rgb(255, 255, 255);
+  }
+}
