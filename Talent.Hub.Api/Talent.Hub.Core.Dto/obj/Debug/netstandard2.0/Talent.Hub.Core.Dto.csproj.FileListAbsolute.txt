@@ -1,0 +1,9 @@
+C:\TR DATA\Talent.Hub\Talent.Hub.Api\Talent.Hub.Core.Dto\bin\Debug\netstandard2.0\Talent.Hub.Core.Dto.deps.json
+C:\TR DATA\Talent.Hub\Talent.Hub.Api\Talent.Hub.Core.Dto\bin\Debug\netstandard2.0\Talent.Hub.Core.Dto.dll
+C:\TR DATA\Talent.Hub\Talent.Hub.Api\Talent.Hub.Core.Dto\bin\Debug\netstandard2.0\Talent.Hub.Core.Dto.pdb
+C:\TR DATA\Talent.Hub\Talent.Hub.Api\Talent.Hub.Core.Dto\obj\Debug\netstandard2.0\Talent.Hub.Core.Dto.csprojAssemblyReference.cache
+C:\TR DATA\Talent.Hub\Talent.Hub.Api\Talent.Hub.Core.Dto\obj\Debug\netstandard2.0\Talent.Hub.Core.Dto.csproj.CoreCompileInputs.cache
+C:\TR DATA\Talent.Hub\Talent.Hub.Api\Talent.Hub.Core.Dto\obj\Debug\netstandard2.0\Talent.Hub.Core.Dto.AssemblyInfoInputs.cache
+C:\TR DATA\Talent.Hub\Talent.Hub.Api\Talent.Hub.Core.Dto\obj\Debug\netstandard2.0\Talent.Hub.Core.Dto.AssemblyInfo.cs
+C:\TR DATA\Talent.Hub\Talent.Hub.Api\Talent.Hub.Core.Dto\obj\Debug\netstandard2.0\Talent.Hub.Core.Dto.dll
+C:\TR DATA\Talent.Hub\Talent.Hub.Api\Talent.Hub.Core.Dto\obj\Debug\netstandard2.0\Talent.Hub.Core.Dto.pdb

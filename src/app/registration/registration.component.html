@@ -17,19 +17,19 @@
         </div>
         <div class="row form-group">
           <label class="col-sm-12">User Name</label>
-          <input class="col-sm-12 form-control" type="text" [formControl]="userName">
+          <input class="col-sm-12 form-control" type="text" formControlName="userName">
         </div>
         <div class="row form-group">
           <label class="col-sm-12">First Name</label>
-          <input class="col-sm-12 form-control" type="text" [formControl]="firstName">
+          <input class="col-sm-12 form-control" type="text" formControlName="firstName">
         </div>
         <div class="row form-group">
           <label class="col-sm-12">Last Name</label>
-          <input class="col-sm-12 form-control" type="text" [formControl]="lastName">
+          <input class="col-sm-12 form-control" type="text" formControlName="lastName">
         </div>
         <div class="row form-group">
           <label class="col-sm-12">E-mail Address</label>
-          <input class="col-sm-12 form-control" type="email" [formControl]="email">
+          <input class="col-sm-12 form-control" type="email" formControlName="email">
           <div class="form-control-feedback" *ngIf="email.errors && (email.dirty || email.touched)">
             <p *ngIf="email.errors.required">Email is required</p>
             <p *ngIf="email.errors.pattern">The email address must contain at least the @ character</p>
@@ -40,7 +40,7 @@
           'has-success': password.valid && (password.dirty || password.touched)
      }">
           <label class="col-sm-12">Password</label>
-          <input class="col-sm-12 form-control" type="password" [formControl]="password">
+          <input class="col-sm-12 form-control" type="password" formControlName="password">
           <div class="form-control-feedback" *ngIf="password.errors && (password.dirty || password.touched)">
             <p *ngIf="password.errors.required">Password is required</p>
             <p *ngIf="password.errors.minlength">Password must be 8 characters long, we need another
@@ -49,11 +49,11 @@
         </div>
         <div class="row form-group">
           <label class="col-sm-12">Confirm Password</label>
-          <input class="col-sm-12 form-control" type="password" [formControl]="confirmPassword">
+          <input class="col-sm-12 form-control" type="password" formControlName="confirmPassword">
         </div>
         <div class="row">
           <div class="col-sm-6">
-            <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
+            <button type="submit" class="btn btn-primary btn-lg btn-block" (click)="RegistrationHandler()">Register</button>
           </div>
           <div class="col-sm-6">
             <a class="btn-light-grey btn btn-secondary btn-lg btn-block" href="/login">Login</a>
